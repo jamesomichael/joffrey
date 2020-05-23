@@ -1,7 +1,6 @@
 const axios = require('axios');
 let params = {};
 
-
 const get_gif_by_query = async (bot, data) => {
     const gif_request = data.text.split('gif ')[1].trim();
     const response = await axios.get(`https://api.giphy.com/v1/gifs/search?api_key=${process.env.GIPHY_KEY}&q=${gif_request}`);

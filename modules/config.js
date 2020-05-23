@@ -5,6 +5,7 @@ const initialise_bot = () => {
         'token': process.env.SLACK_TOKEN, 
         'name': 'geoffrey'
     });
+    
     return bot;
 };
 
