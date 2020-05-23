@@ -26,7 +26,7 @@ const get_gif_by_query = async (bot, data) => {
     
         bot.postMessage(data.channel, '', params);
     } else {
-        bot.postMessage(data.channel, `<${data.user}> no gifs found :sob:`, params);
+        bot.postMessage(data.channel, `<@${data.user}> no gifs found :sob:`, params);
     }
 };
 
